@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="320dp"
+        android:background="@color/colorMy">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="80dp"
+            android:text="ANDROID"
+            android:textColor="#ffffff"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:textColorHint="@color/colorAccent"/>
+    </RelativeLayout>
+
+    <FrameLayout
+        android:elevation="20dp"
+        android:layout_marginTop="190dp"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:background="@drawable/roundone"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/One"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="50dp"
+                android:text="LOGIN"
+                android:textColor="#536dfe"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:id="@+id/Two"
+                android:layout_below="@id/One"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="47dp"
+                android:layout_marginTop="20dp"
+                android:text="Username"
+                android:textColor="#536dfe"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/Three"
+                android:layout_below="@id/Two"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_centerHorizontal="true"
+                android:textCursorDrawable="@color/colorMy"
+                android:ellipsize="start"
+                />
+
+
+
+            <TextView
+                android:id="@+id/Four"
+                android:layout_below="@id/Three"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="47dp"
+                android:layout_marginTop="20dp"
+                android:text="Password"
+                android:textColor="#536dfe"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/Five"
+                android:layout_below="@id/Four"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_centerHorizontal="true"
+                android:textCursorDrawable="@color/colorMy"
+                android:inputType="textPassword" />
+
+            <TextView
+                android:id="@+id/Six"
+                android:layout_below="@id/Five"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="47dp"
+                android:layout_marginTop="10dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="25dp"
+                android:text="Forget your password"
+                android:textColor="#536dfe"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+
+            <Button
+                android:id="@+id/Seven"
+                android:layout_below="@+id/Six"
+                android:layout_width="150dp"
+                android:layout_height="40sp"
+                android:background="@drawable/buttoncurve"
+                android:textColor="#fff"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="40dp"
+                android:textStyle="bold"
+                android:text="LOGIN"/>
+
+            <TextView
+                android:layout_below="@+id/Seven"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true"
+                android:text="Don't have an account? Sign up"
+                android:textColor="#536dfe"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_alignParentBottom="true"
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_gravity="bottom"
+                android:background="@color/colorAccent">
+
+            </LinearLayout>
+        </RelativeLayout>
+
+    </FrameLayout>
+
+</RelativeLayout>
